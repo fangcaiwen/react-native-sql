@@ -1,6 +1,6 @@
 由于上班项目紧，沉浸了很久，没更新技术文档了。整个人也被业务逻辑牢牢的套住，这不年前最后一天，抽出半天功夫，写了这个简单的demo，希望能帮到有需求的同行们，你若喜欢，就帮我点个赞，不胜感激。
-话不多说，直接lol代码：
-1.数据库建立，更新方法类
+##话不多说，直接lol代码：
+***1.数据库建立，更新方法类***
 ```
 package com.myappt.sql;
 
@@ -34,7 +34,7 @@ public class DBHelper extends SQLiteOpenHelper {
 }
 ```
 
-2.数据库增、删、查
+***2.数据库增、删、查***
 ```
 package com.myappt.sql;
 
@@ -166,7 +166,7 @@ public class DBManager {
 
 ```
 
-3.暴露给react native使用的方法
+***3.暴露给react native使用的方法***
 ```
 package com.myappt.sql;
 
@@ -222,7 +222,7 @@ public class DBManagerModule extends ReactContextBaseJavaModule {
 }
 
 ```
-4.这仅仅是一个套路（一）DBManagerPackage
+***4.这仅仅是一个套路（一）DBManagerPackage***
 ```
 package com.myappt.sql;
 
@@ -252,7 +252,7 @@ public class DBManagerPackage implements ReactPackage {
 
 ```
 
-5.这仅仅是一个套路（二）
+***5.这仅仅是一个套路（二）***
 ```
 package com.myappt;
 
@@ -306,7 +306,7 @@ public class MainApplication extends Application implements ReactApplication {
 }
 
 ```
-6.react native层使用之demo
+***6.react native层使用之demo***
 ```
 /**
  * Sample React Native App
@@ -481,4 +481,4 @@ const styles = StyleSheet.create({
 
 ```
 总体看下来，超级简单。大神轻喷，初学者可以试试，最好自己实现这个demo，你会收获不少。再啰嗦一句，觉得有用的帮我点个赞，如有疑问留言区见。
-最后，老规矩，简书地址：https://www.jianshu.com/p/e8dc9bc60454
+##最后，老规矩，简书地址：https://www.jianshu.com/p/e8dc9bc60454
