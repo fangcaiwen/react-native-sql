@@ -1,7 +1,5 @@
 由于上班项目紧，沉浸了很久，没更新技术文档了。整个人也被业务逻辑牢牢的套住，这不年前最后一天，抽出半天功夫，写了这个简单的demo，希望能帮到有需求的同行们，你若喜欢，就帮我点个赞，不胜感激。
 
-先看效果图
-![WechatIMG1.png](https://upload-images.jianshu.io/upload_images/13222032-32821998723e12bf.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 话不多说，直接lol代码：
 ***1.数据库建立，更新方法类***
