@@ -7,12 +7,17 @@
     "test": "jest"
   },
   "dependencies": {
+    "mobx": "^4.3.1",
+    "mobx-react": "^5.1.0",
     "react": "16.3.1",
-    "react-native": "0.55.4"
+    "react-native": "0.55.4",
+    "react-native-sql": "git+ssh://git@gitlab.iotbull.com:2222/react_native/react-native-sql.git"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
     "babel-preset-react-native": "4.0.1",
+    "babel-preset-react-native-stage-0": "^1.0.1",
     "jest": "23.6.0",
     "react-test-renderer": "16.3.1"
   },
