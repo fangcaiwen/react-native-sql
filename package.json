@@ -11,7 +11,8 @@
     "mobx-react": "^5.1.0",
     "react": "16.3.1",
     "react-native": "0.55.4",
-    "react-native-sql": "git+ssh://git@gitlab.iotbull.com:2222/react_native/react-native-sql.git"
+    "react-native-sql": "git+ssh://git@gitlab.iotbull.com:2222/react_native/react-native-sql.git",
+    "react-native-qrcode": "git://github.com/fangcaiwen/react-native-qrcode.git"
   },
   "devDependencies": {
     "babel-jest": "23.6.0",

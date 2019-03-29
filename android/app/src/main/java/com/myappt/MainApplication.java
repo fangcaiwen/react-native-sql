@@ -3,12 +3,12 @@ package com.myappt;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.react_native_qrcode.QrcodePackage;
 import com.gniot.react_native_sql.SqlPackage;
 import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
-import com.myappt.qrcode.QrcodePackage;
 import com.myappt.sql.DBManagerPackage;
 
 import java.util.Arrays;
@@ -26,9 +26,10 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+          new QrcodePackage(),
           new SqlPackage(),
-          new DBManagerPackage(),
-          new QrcodePackage()
+          new DBManagerPackage()
+
       );
     }
 

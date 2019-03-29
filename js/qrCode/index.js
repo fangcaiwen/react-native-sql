@@ -12,11 +12,8 @@ import {
     View,
     TextInput,
     TouchableOpacity,
-    NativeModules,
-    requireNativeComponent
 } from 'react-native';
-import PropTypes from 'prop-types';
-
+import { QrImageView,QrcodeModule }from 'react-native-qrcode';
 
 type Props = {};
 export default class Realm extends Component<Props> {
@@ -33,7 +30,7 @@ export default class Realm extends Component<Props> {
 
     // 开始扫描
     startScan = () => {
-        NativeModules.QrcodeModule.startScan((text) => {
+         QrcodeModule.startScan((text) => {
             alert("扫描结果："+text);
         });
     };
@@ -78,7 +75,7 @@ export default class Realm extends Component<Props> {
 
                 {srcString.length>0? <QrImageView
                     style={{width:300,height:300}}
-                    size={230}
+                    size={350}
                     imageSrc={srcString}
                 /> :null}
 
@@ -100,23 +97,3 @@ const styles = StyleSheet.create({
         alignItems:'center',
     }
 });
-
-const QrImageView1 = {
-    name:"QrImageView",
-    propTypes:{
-        "size":PropTypes.number,
-        "imageSrc":PropTypes.string,
-        ...View.propTypes
-    }
-}
-
-const RCTQrImageView = requireNativeComponent('QrImageView',QrImageView1,{
-});
-
-class QrImageView extends Component {
-    render() {
-        return (
-            <RCTQrImageView {...this.props} />
-        );
-    }
-}
