@@ -112,7 +112,7 @@ export default class Realm extends Component<Props> {
 
     // 编辑数据
     editData = () => {
-        NativeModules.SqlModule.updateData({schoolName:"一中222",className:"haha222"},{schoolName:"一中",className:"haha"},this.tableName).then((value) => {
+        NativeModules.SqlModule.updateData({schoolName:"一中222",className:"haha222"},{schoolName:"908"},this.tableName).then((value) => {
             if(JSON.parse(value).result==1){
                 ToastAndroid.show("编辑成功", ToastAndroid.SHORT);
                 this.loadData();

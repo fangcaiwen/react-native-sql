@@ -8,6 +8,7 @@ import com.facebook.react.ReactNativeHost;
 import com.facebook.react.ReactPackage;
 import com.facebook.react.shell.MainReactPackage;
 import com.facebook.soloader.SoLoader;
+import com.myappt.qrcode.QrcodePackage;
 import com.myappt.sql.DBManagerPackage;
 
 import java.util.Arrays;
@@ -25,8 +26,9 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
-            new SqlPackage(),
-          new DBManagerPackage()
+          new SqlPackage(),
+          new DBManagerPackage(),
+          new QrcodePackage()
       );
     }
 
